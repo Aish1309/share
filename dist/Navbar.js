@@ -8,7 +8,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 // src/Navbar.js
 
-var Navbar = function Navbar() {
+var Navbar = function Navbar(props) {
   return /*#__PURE__*/_react["default"].createElement("nav", {
     style: {
       background: '#333',
@@ -32,6 +32,6 @@ var Navbar = function Navbar() {
     style: {
       color: '#fff'
     }
-  }, "Contact"));
+  }, props.contact), /*#__PURE__*/_react["default"].createElement("h2", null, props.title));
 };
 var _default = exports["default"] = Navbar;
