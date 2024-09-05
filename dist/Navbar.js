@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
+require("../src/Navbar.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 // src/Navbar.js
 
@@ -32,6 +33,8 @@ var Navbar = function Navbar(props) {
     style: {
       color: '#fff'
     }
-  }, props.contact), /*#__PURE__*/_react["default"].createElement("h2", null, props.title));
+  }, props.contact), /*#__PURE__*/_react["default"].createElement("h2", {
+    className: "heading"
+  }, props.title));
 };
 var _default = exports["default"] = Navbar;
